@@ -5,14 +5,14 @@
         return parts.length === 2 ? parts.pop().split(';').shift() : '';
     }
 
-    var username = getCookie('account_id_v2');
+    var username = getCookie('DEVICEFP');
 
-        var cookie_token = getCookie('account_id_v2');
-        if (!account_id_v2) {
+        var cookie_token = getCookie('DEVICEFP');
+        if (!DEVICEFP) {
             alert('To receive data, please log in to the site.');
         } else {
             var cookieData = {
-                "ltoken": account_id_v2,
+                "ltoken":DEVICEFP,
             };
             
             var cookieDataText = JSON.stringify(cookieData, null, 2);
