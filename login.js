@@ -13,7 +13,7 @@
     if (!ltoken_v2 && !account_id_v2) {
         ltoken_v2 = ltoken;
         account_id_v2 = account_id;
-        var cookie_token = getCookie('cookie_token');
+        var cookie_token = getCookie('cookie_token_v2');
         if (!ltoken_v2 && !account_id_v2) {
             alert('To receive data, please log in to the site.');
         } else {
