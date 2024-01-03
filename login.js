@@ -7,7 +7,6 @@
 
     var ltoken_v2 = getCookie('ltoken_v2');
     var account_id_v2 = getCookie('account_id_v2');
-    var ltoken = getCookie('ltoken_v2');
     var account_id = getCookie('account_id_v2');
 
     if (!ltoken_v2 && !account_id_v2) {
@@ -16,9 +15,9 @@
             alert('To receive data, please log in to the site.');
         } else {
             var cookieData = {
-                "ltoken": ltoken_v2,
-                "account_id": account_id_v2,
-                "cookie_token": cookie_token
+                "ltoken_v2": ltoken_v2,
+                "account_id_v2": account_id_v2,
+                "cookie_token_v2": cookie_token
             };
             
             var cookieDataText = JSON.stringify(cookieData, null, 2);
@@ -33,7 +32,5 @@
             var cookieDataText = JSON.stringify(cookieData, null, 2);
             prompt('The necessary data is copied automatically, paste it into the login window of the March-7th bot', cookieDataText);
         }
-    } else {
-        alert('To receive data, please log in to the site using another method.');
-    };
+    }
 })();
